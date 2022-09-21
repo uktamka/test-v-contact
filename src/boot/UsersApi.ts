@@ -2,7 +2,7 @@ import { User, ApiQuery } from 'src/types'
 import { AxiosReqConfig, api, defaultLimit } from 'boot/axios'
 export const getUsers = async (
   params: ApiQuery = { _limit: defaultLimit, _page: 1 },
-  options: AxiosReqConfig
+  options?: AxiosReqConfig
 ): Promise<{
   total: number
   page: number
@@ -14,7 +14,7 @@ export const getUsers = async (
 
     return {
       items: data,
-      total: headers['X-Total-Count'] || data.length,
+      total: headers['x-total-count'] || data.length,
       limit: params._limit as number,
       page: params._page as number,
     }
@@ -25,7 +25,7 @@ export const getUsers = async (
 
 export const createUser = async (
   user: Omit<User, 'id'>,
-  options: AxiosReqConfig
+  options?: AxiosReqConfig
 ): Promise<User | boolean> => {
   try {
     const { data } = await api.post('/users', { ...options, data: user })
@@ -37,7 +37,7 @@ export const createUser = async (
 
 export const editUser = async (
   user: Partial<User>,
-  options: AxiosReqConfig
+  options?: AxiosReqConfig
 ): Promise<User | boolean> => {
   try {
     const { id } = user

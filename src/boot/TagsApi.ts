@@ -2,8 +2,8 @@ import { ApiQuery, Tag } from 'src/types'
 import { AxiosReqConfig, api } from 'boot/axios'
 
 export const getTags = async (
-  params: ApiQuery,
-  options: AxiosReqConfig
+  params?: ApiQuery,
+  options?: AxiosReqConfig
 ): Promise<Array<Tag>> => {
   try {
     const { data } = await api.get('/tags', { ...options, params })
@@ -15,7 +15,7 @@ export const getTags = async (
 
 export const createTag = async (
   tag: Omit<Tag, 'id'>,
-  options: AxiosReqConfig
+  options?: AxiosReqConfig
 ): Promise<Tag | boolean> => {
   try {
     const { data } = await api.post('/tags', { ...options, data: tag })
@@ -25,7 +25,7 @@ export const createTag = async (
   }
 }
 
-export const editTag = async (tag: Partial<Tag>, options: AxiosReqConfig) => {
+export const editTag = async (tag: Partial<Tag>, options?: AxiosReqConfig) => {
   try {
     const { id } = tag
     delete tag.id
