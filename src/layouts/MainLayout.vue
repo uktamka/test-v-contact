@@ -28,7 +28,9 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <Suspense>
+        <router-view />
+      </Suspense>
     </q-page-container>
   </q-layout>
 </template>
@@ -36,6 +38,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import EssentialLink, { EssentialLinkProps } from 'components/EssentialLink.vue'
+import { useTagStore } from 'stores/UsersTags';
+
+const tagStore = useTagStore()
 
 const essentialLinks: EssentialLinkProps[] = [
   {
@@ -57,4 +62,6 @@ const leftDrawerOpen = ref(false)
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value
 }
+
+tagStore.getTags()
 </script>
