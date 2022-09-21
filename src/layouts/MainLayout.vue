@@ -40,15 +40,15 @@ import EssentialLink, { EssentialLinkProps } from 'components/EssentialLink.vue'
 const essentialLinks: EssentialLinkProps[] = [
   {
     title: 'contacts',
-    caption: '',
+    caption: 'Manage contacts',
     icon: 'contacts',
-    link: '',
+    link: 'contacts',
   },
   {
     title: 'Tags',
-    caption: '',
+    caption: 'Manage tags',
     icon: 'tag',
-    link: '',
+    link: 'tags',
   },
 ]
 
