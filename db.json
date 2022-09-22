@@ -1,0 +1,156 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "tag": 1,
+      "email": "Sincere@april.biz",
+      "address": {
+        "city": "Gwenborough",
+        "street": "Kulas Light",
+        "suite": "Apt. 556"
+      },
+      "phone": "1-770-736-8031"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "tag": 2,
+      "email": "Shanna@melissa.tv",
+      "address": {
+        "city": "Wisokyburgh",
+        "street": "Victor Plains",
+        "suite": "Suite 879"
+      },
+      "phone": "010-692-6593"
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "tag": 5,
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "city": "McKenziehaven",
+        "street": "Douglas Extension",
+        "suite": "Suite 847"
+      },
+      "phone": "1-463-123-4447"
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "tag": 1,
+      "email": "Julianne.OConner@kory.org",
+      "address": {
+        "city": "South Elvis",
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692"
+      },
+      "phone": "493-170-9623"
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "tag": 2,
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": {
+        "city": "Roscoeview",
+        "street": "Skiles Walks",
+        "suite": "Suite 351"
+      },
+      "phone": "(254)954-1289"
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "username": "Leopoldo_Corkery",
+      "tag": 2,
+      "email": "Karley_Dach@jasper.info",
+      "address": {
+        "city": "South Christy",
+        "street": "Norberto Crossing",
+        "suite": "Apt. 950"
+      },
+      "phone": "1-477-935-8478"
+    },
+    {
+      "id": 7,
+      "name": "Kurtis Weissnat",
+      "username": "Elwyn.Skiles",
+      "tag": 3,
+      "email": "Telly.Hoeger@billy.biz",
+      "address": {
+        "city": "Howemouth",
+        "street": "Rex Trail",
+        "suite": "Suite 280"
+      },
+      "phone": "210.067.6132"
+    },
+    {
+      "id": 8,
+      "name": "Nicholas Runolfsdottir V",
+      "username": "Maxime_Nienow",
+      "tag": 4,
+      "email": "Sherwood@rosamond.me",
+      "address": {
+        "city": "Aliyaview",
+        "street": "Ellsworth Summit",
+        "suite": "Suite 729"
+      },
+      "phone": "586.493.6943"
+    },
+    {
+      "id": 9,
+      "name": "Glenna Reichert",
+      "username": "Delphine",
+      "tag": 3,
+      "email": "Chaim_McDermott@dana.io",
+      "address": {
+        "city": "Bartholomebury",
+        "street": "Dayna Park",
+        "suite": "Suite 449"
+      },
+      "phone": "(775)976-6794"
+    },
+    {
+      "id": 10,
+      "name": "Clementina DuBuque",
+      "username": "Moriah.Stanton",
+      "tag": 1,
+      "email": "Rey.Padberg@karina.biz",
+      "address": {
+        "city": "Lebsackbury",
+        "street": "Kattie Turnpike",
+        "suite": "Suite 198"
+      },
+      "phone": "024-648-3804"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "Other"
+    },
+    {
+      "id": 2,
+      "name": "Family"
+    },
+    {
+      "id": 3,
+      "name": "Work"
+    },
+    {
+      "id": 4,
+      "name": "Customers"
+    },
+    {
+      "id": 5,
+      "name": "Friends"
+    }
+  ]
+}

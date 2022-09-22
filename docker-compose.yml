@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: 'v-contact'
+    build: .
+    restart: 'always'
+    environment:
+      - HOST_API=http://localhost:9000
+    ports:
+      - '80:80'
+
+  api:
+    container_name: 'json-placeholder'
+    image: clue/json-server
+    restart: 'always'
+    volumes:
+      - './db.json:/data/db.json'
+    ports:
+      - '9000:80'
