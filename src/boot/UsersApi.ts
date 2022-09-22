@@ -28,7 +28,7 @@ export const createUser = async (
   options?: AxiosReqConfig
 ): Promise<User | boolean> => {
   try {
-    const { data } = await api.post('/users', { ...options, data: user })
+    const { data } = await api.post('/users', user, options)
     return data
   } catch (_) {
     return false
@@ -42,10 +42,7 @@ export const editUser = async (
   try {
     const { id } = user
     delete user.id
-    const { data } = await api.patch(`/users/${id}`, {
-      ...options,
-      data: user,
-    })
+    const { data } = await api.patch(`/users/${id}`, user, options)
     return data
   } catch (_) {
     return false

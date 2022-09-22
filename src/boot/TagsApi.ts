@@ -18,7 +18,7 @@ export const createTag = async (
   options?: AxiosReqConfig
 ): Promise<Tag | boolean> => {
   try {
-    const { data } = await api.post('/tags', { ...options, data: tag })
+    const { data } = await api.post('/tags', tag, options)
     return data
   } catch (_) {
     return false
@@ -29,10 +29,7 @@ export const editTag = async (tag: Partial<Tag>, options?: AxiosReqConfig) => {
   try {
     const { id } = tag
     delete tag.id
-    const { data } = await api.patch(`/tags/${id}`, {
-      ...options,
-      data: tag,
-    })
+    const { data } = await api.patch(`/tags/${id}`, tag, options)
     return data
   } catch (_) {
     return false
