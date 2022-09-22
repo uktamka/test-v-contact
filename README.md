@@ -37,3 +37,9 @@ npm run format
 ```bash
 npm build:spa
 ```
+
+### Run the app for testing deploy on docker
+
+```bash
+docker-compose up --build -d
+```
